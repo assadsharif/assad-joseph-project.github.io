@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="main">
+            <h1 id="title">Build a Survey Form</h1>
+            <p id="description">Please take a moment to complete our survey and
+                let us know how we're doing.</p>
+            <form id="survey-form">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your
+                    name" required>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter
+                    your email" required>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" name="age" placeholder="Enter
+                    your age" min="18" max="120" required>
+                <label for="dropdown" id="dropdown-label">How often do you visit
+                    our store?</label>
+                <select id="dropdown" name="visit-frequency">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="less-often">Less often</option>
+                    <option value="never">Never</option>
+                </select>
+                <label>How did you hear about us?</label>
+                <label><input type="radio" name="hear-about" value="online-ad">Online
+                    ad</label>
+                <label><input type="radio" name="hear-about" value="tv-ad">TV ad</label>
+                <label><input type="radio" name="hear-about"
+                        value="word-of-mouth">Word of mouth</label>
+                <label><input type="radio" name="hear-about" value="other">Other</label>
+                <label>What is your favorite thing about our store?</label>
+                <label><input type="checkbox" name="favorite-thing"
+                        value="quality">Quality of products</label>
+                <label><input type="checkbox" name="favorite-thing"
+                        value="variety">Variety of products</label>
+                <label><input type="checkbox" name="favorite-thing"
+                        value="price">Prices</label>
+                <label><input type="checkbox" name="favorite-thing"
+                        value="location">Location</label>
+                <label>Any additional comments or suggestions?</label>
+                <textarea name="comments" rows="5"></textarea>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
 
